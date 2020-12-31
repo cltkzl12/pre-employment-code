@@ -1,0 +1,46 @@
+fully connected layer
+
+뉴럴 네트워크
+
+실제로는 matrix들간의 곱으로 이루어져 있다.
+
+1.Forward propagation
+
+data (matrix) -> matrix 1 -> matrix 2 -> matrix 3 -> y'
+		f(data) -> g(f(data)) -> h(g(f(data))) - > y'
+
+사람
+성별 나이 시력 몸무게 -> 키를 추론
+남    27   1     100  ->   200   
+녀    23   1     100  ->   200
+
+각각의 데이터는 벡터로 표현
+데이터들의 모음은 matrix 
+
+1번 사람의 데이터 입력 -> y'(190)
+
+y' y(200)
+Loss(objective) = (y-y')
+
+forward 
+1.각각의 layer에 상응하는 matrix 와 vector
+2.matrix들간의 곱연산과 matrix의 더하기 연산
+
+2.Backward propagation
+
+data (matrix) -> matrix 1 -> matrix 2 -> matrix 3 -> y'
+
+gradient
+방향(가장 크게 증가하는 방향), 크기
+
+
+batch b1 b2 b3 b4 ...
+grad  g1 g2 g3 g4 ...
+
+sgd = 그때 그때마다의 grad를 구해서 사용
+momentum = 무빙 에버레지를 구해서
+rmsprop = 그레디언트 크기가 크면 스탭을 줄여주고
+	   그레디어늩 크기가 작으면 스탭을 키워줌
+
+
+
