@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="worst concave points <= 0.147\ngini = 0.466\nsamples = 227\nvalue = [143, 84]", fillcolor="#f4cbad"] ;
+1 [label="worst area <= 1028.35\ngini = 0.134\nsamples = 152\nvalue = [141, 11]", fillcolor="#e78b48"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="worst texture <= 33.105\ngini = 0.054\nsamples = 145\nvalue = [141, 4]", fillcolor="#e6853f"] ;
+1 -> 2 ;
+3 [label="mean concavity <= 0.12\ngini = 0.015\nsamples = 133\nvalue = [132, 1]", fillcolor="#e5823b"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 126\nvalue = [126, 0]", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="gini = 0.245\nsamples = 7\nvalue = [6, 1]", fillcolor="#e9965a"] ;
+3 -> 5 ;
+6 [label="gini = 0.375\nsamples = 12\nvalue = [9, 3]", fillcolor="#eeab7b"] ;
+2 -> 6 ;
+7 [label="gini = 0.0\nsamples = 7\nvalue = [0, 7]", fillcolor="#399de5"] ;
+1 -> 7 ;
+8 [label="mean symmetry <= 0.164\ngini = 0.052\nsamples = 75\nvalue = [2, 73]", fillcolor="#3ea0e6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.408\nsamples = 7\nvalue = [2, 5]", fillcolor="#88c4ef"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 68\nvalue = [0, 68]", fillcolor="#399de5"] ;
+8 -> 10 ;
+}
